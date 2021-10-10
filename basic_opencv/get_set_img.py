@@ -2,7 +2,7 @@ import argparse
 import cv2
 
 ap = argparse.ArgumentParser()
-ap.add_argument("-i", "--image", type=str, default="adrian.png", help="path to the input image")
+ap.add_argument("-i", "--image", type=str, default="dataset/italy.jpg", help="path to the input image")
 args = vars(ap.parse_args())
 
 image = cv2.imread(args["image"])
